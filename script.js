@@ -64,7 +64,14 @@ const authorElement = document.getElementById('author');
 // Function to generate a random quote
 function generateRandomQuote() {
     const randomIndex = Math.floor(Math.random() * quotes.length);
+    const randomIndex2 = Math.floor(Math.random() * 10);
     const randomQuote = quotes[randomIndex];
+    const randomQuote2 = quotes[randomIndex2];
+    console.log(randomQuote2);
+    console.log(randomQuote);
+    // console.log(randomQuote);
+    console.log(quotes);
+    
     quoteElement.textContent = randomQuote.quote;
     authorElement.textContent = randomQuote.author;
 }
@@ -77,3 +84,13 @@ document.getElementById('btn-qoutes-generate').addEventListener('click', generat
 
 // implement login every 1 mint to change the quote
 setInterval(generateRandomQuote, 60000); // 60000 milliseconds = 1 minute
+
+// let a = Math.floor(12.78)
+// let b = Math.random()
+
+// console.log(a);
+// console.log(b);
+
+// console.log(Math.floor(Math.random() * quotes.length));
+
+
